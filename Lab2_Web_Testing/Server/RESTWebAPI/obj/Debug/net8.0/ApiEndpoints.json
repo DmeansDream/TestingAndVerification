@@ -1,0 +1,113 @@
+[
+  {
+    "ContainingType": "RESTWebAPI.Controllers.MapRegionDataController",
+    "Method": "CreateNewRegion",
+    "RelativePath": "api/mapdata",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RESTWebAPI.Model.MapRegionModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "isAdmin",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RESTWebAPI.Controllers.MapRegionDataController",
+    "Method": "GetRegionByID",
+    "RelativePath": "api/mapdata/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RESTWebAPI.Controllers.PlayerCharacterDataController",
+    "Method": "CreatePC",
+    "RelativePath": "api/pcdata",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "RESTWebAPI.Model.PlayerCharacterModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RESTWebAPI.Controllers.PlayerCharacterDataController",
+    "Method": "GetPCByID",
+    "RelativePath": "api/pcdata/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "fullInfo",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RESTWebAPI.Controllers.PlayerCharacterDataController",
+    "Method": "UpdatePlayerStats",
+    "RelativePath": "api/pcdata/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "RESTWebAPI.Data.DTO.UpdatePlayerStatsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RESTWebAPI.Controllers.PlayerCharacterDataController",
+    "Method": "RemovePlayerCharacter",
+    "RelativePath": "api/pcdata/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
